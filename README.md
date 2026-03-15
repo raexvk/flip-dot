@@ -1,19 +1,13 @@
-# @raex-ui/flip-dot
+# Flip Dot
 
-A cascading dot-flip grid that simulates a physical flip-dot display. Dots flip with spring physics in a diagonal cascade pattern.
+Animated digit component simulating a physical flip-dot display. Dots flip with spring physics in a diagonal cascade pattern, creating a satisfying mechanical transition.
 
-![flip-dot](https://raex-ui.vercel.app/components/flip-dot)
-
-## Install
-
-```bash
-npm install @raex-ui/flip-dot
-```
+[Live Demo →](https://vbuilds.vercel.app/components/flip-dot)
 
 ## Usage
 
 ```tsx
-import { FlipDot } from "@raex-ui/flip-dot";
+import { FlipDot } from "./flip-dot";
 
 function MyComponent() {
   const [digit, setDigit] = useState(0);
@@ -23,18 +17,16 @@ function MyComponent() {
 
 ## Props
 
-| Prop | Type | Description |
-|------|------|-------------|
-| `value` | `number` | Digit to display (0–9) |
-| `size` | `number` | Width in pixels. Height is automatically 1.5× width. |
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `value` | `number` | `0` | Digit to display (0–9) |
+| `size` | `number` | `64` | Width in pixels. Height is 1.5× width. |
 
-## Peer Dependencies
+## Built With
 
-- `react` >=18
-- `react-dom` >=18
-- `framer-motion` >=10
-
-No Tailwind CSS required.
+- React
+- Framer Motion
+- TypeScript
 
 ## License
 
